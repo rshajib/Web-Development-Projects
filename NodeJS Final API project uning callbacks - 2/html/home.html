@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            color:red;
+            text-align: center;
+        }
+        body {
+            background-color: black;
+        }
+        h2 {
+            color: royalblue;
+            text-align: center;
+        }
+        legend {
+            color: white;
+            text-align: center;
+        }
+        #ingredientLabel {
+          color:white;
+          text-align: center;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            position: center;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-position: center;
+    
+        }
+    </style>
+    <title>Pet Finder</title>
+</head>
+<body>
+    <h1>Pet Finder</h1>
+    <h2>Input pet type to find pets list</h2>
+		<h6 style="color: white">Pet is id: 53928812</h6>
+		<h6 style="color: white">Pet is id: 53950308</h6>
+		<h6 style="color: white">Pet is id: 53945918</h6>
+    <form action= "get_pet" method="get" id= "myForm">
+        <fieldset>
+            <legend id = "legend">Find Out Pet</legend>
+            <label for="task" id= "petLabel">Type:</label><br />
+            <input id="task" placeholder="Type id here" type="number" name="petType" type="text" value="53950290" /><br>
+            <input type="submit" value="Find" id = "myButton" />
+        </fieldset>
+    </form>
+</body>
+</html>
